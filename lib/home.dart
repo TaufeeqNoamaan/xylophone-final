@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -85,10 +84,6 @@ class SoundButton extends StatelessWidget {
             style:
                 ButtonStyle(backgroundColor: MaterialStateProperty.all(color)),
             onPressed: () async {
-              // final player = AudioPlayer();
-
-              // await player
-              //     .setSource(AssetSource('assets/assets_note1.wav'));
               final assetsAudioPlayer = AssetsAudioPlayer();
 
               assetsAudioPlayer.open(
